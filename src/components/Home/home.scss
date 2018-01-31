@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.api-block {
+  max-width: 500px;
+  border: 1px solid #08c;
+  background: #b3e6ff;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: left;
+
+  p {
+    margin: 0;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+}
