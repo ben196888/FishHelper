@@ -6,7 +6,7 @@ const loaders = require('./webpack.loaders.js');
 
 const VENDOR_LIBS = [
   'react', 'lodash', 'redux', 'react-redux', 'react-dom', 'redux-form',
-  'react-router', 'react-router-redux', 'redux-saga',
+  'react-router', 'react-router-redux', 'redux-saga', 'react-intl'
 ];
 
 module.exports = {

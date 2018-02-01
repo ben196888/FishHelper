@@ -16,5 +16,6 @@ module.exports = {
   'containers':  path.resolve(src, 'containers'),
   'sagas':       path.resolve(src, 'sagas'),
   'stylesheets': path.resolve(src, 'stylesheets'),
+  'intl':        path.resolve(src, 'intl'),
   assets,
 };
