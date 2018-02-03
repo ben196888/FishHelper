@@ -13,6 +13,11 @@ const consumerTitle = {
   defaultMessage: 'Consumer',
 };
 
+const consumerDesc = {
+  id: 'aquaculture.consumer-desc',
+  defaultMessage: 'The easiest and most important thing you can do is ask the question: "Do you serve sustainable seafood?" Let your favorite businesses know that ocean-friendly seafood\'s on your shopping list. These companies in your community play a crucial role in the conservation of ocean resources and they listen to their customers. Ask them to support sustainable seafood and start making a difference today!',
+};
+
 const coldFresh = {
   id: 'aquaculture.cold-fresh',
   defaultMessage: 'Cold Freshwater',
@@ -37,6 +42,7 @@ export default {
   aquacuturistTitle,
   consumerTitle,
   aquacuturistDesc,
+  consumerDesc,
   coldFresh,
   coldSalt,
   warmFresh,

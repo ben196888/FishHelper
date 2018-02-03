@@ -6,7 +6,7 @@ export default class Consumers extends PureComponent {
 
   render () {
     return (
-      <Aquaculture className="consumer-container" title="consumerTitle" />
+      <Aquaculture className="consumer-container" title="consumerTitle" description="consumerDesc" />
     );
   }
 }
