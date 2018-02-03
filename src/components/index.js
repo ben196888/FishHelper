@@ -6,6 +6,7 @@ import Dialog from './Dialog';
 import Button from './Button';
 import Loading from './Loading';
 import Consumers from './Consumers';
+import Organization from './Organization';
 
 export {
   Main,
@@ -16,4 +17,5 @@ export {
   Button,
   Loading,
   Consumers,
+  Organization,
 };

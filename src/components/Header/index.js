@@ -39,7 +39,14 @@ export default class Header extends PureComponent {
             to={PATHS.CONSUMERS}
           >
             <FormattedMessage {...locale.consumers} />
+            
           </Link>
+          <Link
+            className={styles[this.props.pathname === PATHS.ORGANIZATION ? 'link-active' : 'link']}
+            to={PATHS.ORGANIZATION}
+          >
+            <FormattedMessage {...locale.organization} />
+          </Link>          
           <select className={styles.lang} onChange={this.handleChange} value={this.props.intl.locale}>
             <option value="en-us">English</option>
             <option value="zh-cn">简中</option>

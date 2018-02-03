@@ -13,8 +13,14 @@ const consumers = {
   defaultMessage: 'Consumers',
 };
 
+const organization = {
+  id: 'home.organization',
+  defaultMessage: 'Organization',
+};
+
 export default {
   home,
   aquaculture,
   consumers,
+  organization,
 };
