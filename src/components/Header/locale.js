@@ -5,7 +5,7 @@ const home = {
 
 const aquaculture = {
   id: 'header.aquaculture',
-  defaultMessage: 'Aquaculture',
+  defaultMessage: 'Aquaculturist',
 };
 
 const consumers = {

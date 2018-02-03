@@ -1,5 +1,15 @@
 .header {
   background: #2f3033;
+  max-height: 81px;
+
+  .logo-link {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .logo {
+    height: 81px;
+  }
 
   .nav {
     max-width: 1190px;
@@ -15,6 +25,7 @@
     box-sizing: border-box;
     border-bottom: 3px solid #2f3033;
     transition: .5s;
+    vertical-align: middle;
 
     &:hover {
       border-bottom: 3px solid #0cc;

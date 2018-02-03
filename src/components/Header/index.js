@@ -5,6 +5,7 @@ import PATHS from 'constants/paths';
 import styles from './header.scss';
 import locale from './locale';
 import { FormattedMessage } from 'react-intl';
+import logo from 'assets/logo.png';
 
 export default class Header extends PureComponent {
 
@@ -20,6 +21,12 @@ export default class Header extends PureComponent {
     return (
       <header className={styles.header}>
         <nav className={styles.nav}>
+          <Link
+            to={PATHS.ROOT}
+            className={styles['logo-link']}
+          >
+            <img className={styles.logo} src={logo} alt="not found image" />
+          </Link>
           <Link
             className={styles[this.props.pathname === PATHS.ROOT ? 'link-active' : 'link']}
             to={PATHS.ROOT}

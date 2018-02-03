@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   background: #f0f3f5;
+  font-family: Poppins;
 
   .background {
     background: url(assets/talia-cohen.jpg) center no-repeat;
@@ -29,7 +30,6 @@
   }
 
   .search-block {
-    font-family: Poppins;
     background: white;
     max-width: 600px;
     margin: 0 auto 50px;
@@ -52,25 +52,42 @@
 
   .article-container {
     background: white;
-    padding: 20px;
+    padding: 50px 20px;
     border: 1px solid #eee;
     border-radius: 3px;
     width: 30%;
     box-sizing: border-box;
     margin-right: 20px;
+    position: relative;
 
     img {
-      width: 30px;
-      height: 30px;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 30px);
     }
 
     &:last-of-type {
       margin: 0;
+    }
+
+    h5 {
+      font-size: 20px;
+      color: #369;
+      margin: 20px 0 15px;
+    }
+
+    p {
+      margin: 0;
+      font-family: Roboto;
     }
   }
 
   .article-block {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
+    text-align: left;
   }
 }

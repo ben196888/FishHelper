@@ -1,5 +1,14 @@
 {
-  "home.home": "首頁",
-  "home.aquaculture": "養殖業者",
-  "home.consumers": "消費者"
+  "header.home": "首頁",
+  "header.aquaculture": "養殖業者",
+  "header.consumers": "消費者",
+  "home.organization": "Organization",
+  "home.title": "Helping people make better seafood choices for a healthy ocean",
+  "home.search-seafood": "Search Seafood Recommendations",
+  "home.search-desc": "Our recommendations help you choose seafood that's fished or farmed in ways that have less impact on the environment.",
+  "home.ocean-issue": "Ocean Issues",
+  "home.ocean-desc": "在所有動物性蛋白脂的生產方式中，水產養殖的效率是最高的，世界人口的增加，對蛋白質需求提高，迫使水產養殖業必須迅速升級，各魚種的養殖生產亦須朝永續經營的方向發展。然而，許多養殖魚種是肉食性的，需要高蛋白高油脂的飲食，而最容易取得的原物料便來自野生捕撈的漁產。然而自然界的魚類資源有限，濫用這資源來生產魚粉或魚油，將無助於海洋生態的永續發展，是水產養殖業發展所面臨的一大瓶頸，因此必須尋找替代方案。",
+  "home.i-am-aquacuturist": "我是水產養殖業者",
+  "home.i-am-consumer": "我是消費者",
+  "home.aquaculture-desc": "使用植物性蛋白取代部分的動物性蛋白的飼料來源，並增加健康不生病的魚產量，且能降低對環境的衝擊及影響，建立養殖魚業者的自有品牌，提升魚的經濟價值。"
 }
