@@ -1,7 +1,31 @@
 .container {
-  width: 300px;
+  width: 100%;
   text-align: center;
-  background: url('assets/FRI.png'), rgba(128, 99, 99, 0.651);
-  background-size: cover;
-}
+  background: #f0f3f5;
 
+  .country {
+    margin: 20px 30px 0 0;
+    float: left;
+    height: 40px;
+    width: 120px;
+  }
+
+  .article-container {
+    background: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 40%;
+    box-sizing: border-box;
+    margin-right: 20px;
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
