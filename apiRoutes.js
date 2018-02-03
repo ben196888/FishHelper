@@ -22,6 +22,8 @@ module.exports = (apiRoutes) => {
             if (!error && response.statusCode == 200) {
 
               res.send(response.body);
+            }else{
+               res.send('error');
             }
         }) 
     });
@@ -33,7 +35,9 @@ module.exports = (apiRoutes) => {
             if (!error && response.statusCode == 200) {
 
               res.send(response.body);
-            }
+            }else{
+                res.send('error');
+             }
         }) 
     });
 
