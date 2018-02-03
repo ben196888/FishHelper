@@ -18,9 +18,15 @@ const organization = {
   defaultMessage: 'Organization',
 };
 
+const aboutus = {
+  id: 'home.aboutus',
+  defaultMessage: 'About Us',
+};
+
 export default {
   home,
   aquaculture,
   consumers,
   organization,
+  aboutus,
 };

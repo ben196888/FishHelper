@@ -11,6 +11,7 @@ import HomeContainer from 'containers/HomeContainer';
 import AquacultureContainer from 'containers/AquacultureContainer';
 import ConsumerContainer from 'containers/ConsumerContainer';
 import OrganizationContainer from 'containers/OrganizationContainer';
+import AboutUsContainer from 'containers/AboutUsContainer';
 
 export default (
   <Router history={history}>
@@ -19,6 +20,7 @@ export default (
       <Route path={PATHS.AQUACULTURE} component={AquacultureContainer} />
       <Route path={PATHS.CONSUMERS} component={ConsumerContainer} />
       <Route path={PATHS.ORGANIZATION} component={OrganizationContainer} />
+      <Route path={PATHS.ABOUTUS} component={AboutUsContainer} />
     </Route>
   </Router>
 );
