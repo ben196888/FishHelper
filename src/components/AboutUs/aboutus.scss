@@ -3,6 +3,20 @@
   font-family: Poppins;
 }
 
+.aboutus-content {
+  max-width: 500px;
+  padding-left: 20px;
+
+  h3 {
+    display: flex;
+  }
+  section {
+    display: left;
+    text-align: left;
+    color: #fff;
+  }
+}
+
 .aboutus-block {
   height: 500px;
   background: url(assets/beach.jpg) center;

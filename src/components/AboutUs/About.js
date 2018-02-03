@@ -7,14 +7,14 @@ import { Button } from 'components';
 
 export default class About extends PureComponent {
   render () {
-    const { title, icon } = this.props;
+    const { title, icon, url } = this.props;
 
     return (
       <section className={styles['container']}>
         <div className={styles.circle}>
           <img src={icon} alt="images" />
+          <a href={url} target="_blank"><Button><FormattedMessage {...locale[title]} /></Button></a>
         </div>
-        <Button><FormattedMessage {...locale[title]} /></Button>
       </section>
     );
   }
