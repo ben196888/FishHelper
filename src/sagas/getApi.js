@@ -1,21 +1,19 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import { delay } from 'redux-saga';
 import { toggleLoading } from 'reducers/ui';
-import { GET_POST, getPostSuccess } from 'reducers/post';
+import { GET_FISHKIND, getFishKindSuccess } from 'reducers/fishkind';
 import API from 'utils/api';
 
-export function* getPost (action) {
+export function* getFishKind (action) {
   yield put(toggleLoading(true));
-  yield call(delay, 500);
   try {
-    const payload = yield call(API.getData, 'http://jsonplaceholder.typicode.com/posts/1');
-    yield put(getPostSuccess(payload));
+    const payload = yield call(API.getData, '/api/fishKind');
+    yield put(getFishKindSuccess(payload));
   } catch (e) {
     console.log(e);
   }
   yield put(toggleLoading());
 }
 
-export function* watchgetPost () {
-  yield takeLatest(GET_POST, getPost);
+export function* watchgetFishKind () {
+  yield takeLatest(GET_FISHKIND, getFishKind);
 }
