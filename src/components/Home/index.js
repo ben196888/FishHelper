@@ -30,7 +30,7 @@ export default class Home extends PureComponent {
     const info = [
       { title: 'oceanIssue', text: 'oceanDesc', icon },
       { title: 'IamAquacuturist', text: 'aquacultureDesc', icon },
-      { title: 'IamConsumer', text: 'oceanDesc', icon },
+      { title: 'IamConsumer', text: 'IamConsumerDesc', icon },
     ];
 
     return (
