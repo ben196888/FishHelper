@@ -1,32 +1,42 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import Block from './Block';
-import FRI from 'assets/FRI.png';
+import trfin from 'assets/tfrin.png';
+import twoxsea from 'assets/twoxsea.png';
+import europ_fisheris from 'assets/europ-fisheris.png';
+import nmfs from 'assets/nmfs.png';
+import shuichan from 'assets/shuichan.png';
+import ntou from 'assets/ntou.png';
 import styles from './organization.scss';
 export default class Organization extends PureComponent {
   
   
   render () {
-    const info = [
-      { title: 'oragTitle', icon: FRI },
-      { title: 'oragTitle', icon: FRI },
-      { title: 'oragTitle', icon: FRI },
-    ];
+    const info = {
+      'foreign':[
+        { title: 'twoxsea', icon: twoxsea, url: 'http://twoxsea.com/our-mission/' },
+        { title: 'europ-fisheris', icon: europ_fisheris, url: 'https://ec.europa.eu/fisheries/' },
+        { title: 'nmfs', icon: nmfs, url: 'http://www.nmfs.noaa.gov/' },
+        { title: 'shuichan', icon: shuichan, url: 'http://www.shuichan.cc/news_list.asp?c_id=164&s_id=273' }],
+      'internal':[
+        { title: 'tfrin', icon: trfin, url: 'https://www.tfrin.gov.tw/mp.asp?mp=1' },
+        { title: 'ntou', icon: ntou, url: 'https://www.ntou.edu.tw/bin/home.php' }],
+    };
     return (
       <div>
         <div className={styles.container}>
           <select className={styles.country}>
-            <option value="en-us">美國</option>
-            <option value="zh-cn">中國</option>
-            <option value="zh-tw">台灣</option>
+            <option value="internal">國內</option>
+            <option value="foreign">國外</option>
           </select>        
           <div className={styles['article-block']}>
             {
-              info.map(({title, icon}, index) => (
+              info['foreign'].map(({title, icon, url}, index) => (
                 <Block
                   key={index}
                   title={title}
                   icon={icon}
+                  url={url}
                 />
               ))
             }
