@@ -38,6 +38,10 @@
     th,
     td {
       padding: 10px;
+
+      img {
+        width: 140px;
+      }
     }
   }
 
@@ -77,5 +81,12 @@
       padding: 20px;
       width: 150px;
     }
+  }
+
+  .person-icon {
+    width: 100px;
+    height: 100px;
+    background: url(assets/woman.png);
+    background-size: 100px;
   }
 }

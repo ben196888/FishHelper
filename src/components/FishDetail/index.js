@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import styles from './fish-detail.scss';
 import { Button } from 'components';
-import image from 'assets/woman.png';
 import { Link } from 'react-router';
 import PATHS from 'constants/paths';
 
@@ -111,7 +110,7 @@ export default class FishDetail extends PureComponent {
                 forConsumer.map((account, index) => (
                   <div key={index} className={styles.block}>
                     <div>
-                      <img src={image} alt="images" />
+                      <div className={styles['person-icon']} />
                       <p>Account: {account.account_name}</p>
                       <p>Start Time: {account.processing.start_time}</p>
                       <p>Density: {account.processing.density}</p>
@@ -153,9 +152,9 @@ export default class FishDetail extends PureComponent {
                           {
                             account.feed_method.map((method, index) => (
                               <tr key={index} className={styles['feed-info']}>
-                                <td>{method.time}</td>
-                                <td>{method.amount}</td>
-                                <td>{method.pic}</td>
+                                <td>{method.A_Time}</td>
+                                <td>{method.quaililty}</td>
+                                <td><img src={method.Picture} alt="images" /></td>
                               </tr>
                             ))
                           }

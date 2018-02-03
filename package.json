@@ -4,7 +4,7 @@
   "description": "First react project",
   "main": "app/app.js",
   "scripts": {
-    "build": "rm -rf ./build/* && bnr build:prod",
+    "build": "rm -rf ./build/* && bnr build:prod && bnr build:lang",
     "watch": "rm -rf ./build/* && bnr build:dev",
     "dev": "bnr dev:hot",
     "api": "nodemon server.js",
