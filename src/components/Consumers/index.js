@@ -6,10 +6,11 @@ export default class Consumers extends PureComponent {
 
   static defaultProps = {
     fishkind: [],
+    intl: { locale: 'en-us' },
   }
 
   render () {
-    const { fishkind, getFishKind } = this.props;
+    const { fishkind, getFishKind, intl } = this.props;
 
     return (
       <Aquaculture
@@ -18,6 +19,8 @@ export default class Consumers extends PureComponent {
         description="consumerDesc"
         fishkind={fishkind}
         getFishKind={getFishKind}
+        intl={intl}
+        isConsumer
       />
     );
   }

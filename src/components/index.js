@@ -10,6 +10,7 @@ import Input from './Input';
 import Organization from './Organization';
 import Aquaculture from './Aquaculture';
 import AboutUs from './AboutUs';
+import FishDetail from './FishDetail';
 
 export {
   Main,
@@ -24,4 +25,5 @@ export {
   Organization,
   Aquaculture,
   AboutUs,
+  FishDetail,
 };

@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Aquaculture from 'components/Aquaculture';
-import { getFishKind } from 'reducers/fishkind';
+import { FishDetail } from 'components';
+import { getFishInfo } from 'reducers/fishInfo';
 
 const mapStateToProps = (state) => {
   return {
+    fishInfo: state.fishInfo,
     fishkind: state.fishkind,
     intl: state.intl,
   };
@@ -12,8 +13,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getFishKind: bindActionCreators(getFishKind, dispatch),
+    getFishInfo: bindActionCreators(getFishInfo, dispatch),
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Aquaculture);
+export default connect(mapStateToProps, mapDispatchToProps)(FishDetail);

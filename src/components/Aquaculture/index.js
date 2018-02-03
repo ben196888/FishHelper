@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { FormattedMessage } from 'react-intl';
-import locale from './locale';
+import localeIntl from './locale';
 import styles from './aquaculture.scss';
 import Fish from './Fish';
 import fishIcon0 from 'assets/fish0.png';
@@ -15,6 +15,7 @@ export default class Aquaculture extends PureComponent {
     title: 'aquacuturistTitle',
     description: 'aquacuturistDesc',
     fishkind: [],
+    intl: { locale: 'en-us' },
   }
 
   componentDidMount () {
@@ -22,7 +23,7 @@ export default class Aquaculture extends PureComponent {
   }
 
   render () {
-    const { fishkind } = this.props;
+    const { fishkind, intl: { locale } } = this.props;
     const fishList = [{
       icon: fishIcon0,
       title: 'coldFresh',
@@ -39,8 +40,8 @@ export default class Aquaculture extends PureComponent {
 
     return (
       <div className={styles[this.props.className]}>
-        <h1><FormattedMessage {...locale[this.props.title]} /></h1>
-        <p className={styles.description}><FormattedMessage {...locale[this.props.description]} /></p>
+        <h1><FormattedMessage {...localeIntl[this.props.title]} /></h1>
+        <p className={styles.description}><FormattedMessage {...localeIntl[this.props.description]} /></p>
         <section className={styles['fish-block']}>
           {
             fishList.map(({ icon, title }, index) => (
@@ -49,6 +50,7 @@ export default class Aquaculture extends PureComponent {
                 icon={icon}
                 title={title}
                 fishkind={fishkind}
+                locale={locale}
               />
             ))
           }

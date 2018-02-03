@@ -1,0 +1,23 @@
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 28px;
+    color: #369;
+  }
+
+  .img {
+    width: 50%;
+    vertical-align: bottom;
+  }
+
+  .fish-info {
+    display: inline-block;
+    width: 45%;
+    margin-left: 5%;
+    border: 1px solid #eee;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

@@ -8,6 +8,7 @@ import Article from './Article';
 import article0 from 'assets/article0.png';
 import article1 from 'assets/article1.png';
 import article2 from 'assets/article2.png';
+import PATHS from 'constants/paths';
 
 export default class Home extends PureComponent {
   constructor (props) {
@@ -19,7 +20,13 @@ export default class Home extends PureComponent {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state.value);
+    const input = this.state.value.trim().toLowerCase();
+    const fish = this.props.fishkind.find(({ Name_TW, Name_CN, Name_EN }) => {
+      return Name_TW.toLowerCase() === input || Name_CN.toLowerCase() === input || Name_EN.toLowerCase() === input;
+    });
+    if (fish && fish.ID) {
+      this.props.push(`${PATHS.CONSUMERS}/${fish.ID}`);
+    }
   }
 
   handleChange = (e) => {

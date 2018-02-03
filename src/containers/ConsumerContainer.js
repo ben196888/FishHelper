@@ -8,6 +8,7 @@ const mapStateToProps = (state) => {
   return {
     fishkind: state.fishkind,
     ui: state.ui,
+    intl: state.intl,
   };
 };
 
