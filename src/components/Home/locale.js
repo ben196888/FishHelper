@@ -40,8 +40,9 @@ const IamConsumer = {
 
 const IamConsumerDesc = {
   id: 'home.i-am-consumer-desc',
-  defaultMessage: 'Understand the relevant issues of the marine environment, the sustainability of the oceans, the purchase of healthy fish can eat peace of mind and confidence. Restaurant and seafood industry, to understand the breeding environment and breeding process, choose to trust the farm contract.'
-}
+  defaultMessage: 'Understand the relevant issues of the marine environment, the sustainability of the oceans, the purchase of healthy fish can eat peace of mind and confidence. Restaurant and seafood industry, to understand the breeding environment and breeding process, choose to trust the farm contract.',
+};
+
 export default {
   homeTitle,
   searchSeafood,
@@ -51,5 +52,5 @@ export default {
   IamAquacuturist,
   IamConsumer,
   aquacultureDesc,
-  IamConsumerDesc
+  IamConsumerDesc,
 };
