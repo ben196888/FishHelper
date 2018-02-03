@@ -15,6 +15,7 @@ export default class Consumers extends PureComponent {
       <Aquaculture
         className="consumer-container"
         title="consumerTitle"
+        description="consumerDesc"
         fishkind={fishkind}
         getFishKind={getFishKind}
       />

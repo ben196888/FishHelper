@@ -31,8 +31,9 @@ app.get('*', function(req, res) {
 require('./apiRoutes')(apiRoutes);
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log('node development mode now is listening on:');
-  // console.log(`http://localhost:${serverConfig.nodeServerPort}`);
+  console.log('node development mode now is listening on: 3000');
+  console.log(`http://localhost:${serverConfig.nodeServerPort}`);
   console.log(`http://127.0.0.1:${serverConfig.nodeServerPort}`);
-  // console.log(serverConfig.nodeDevAddress);
+  console.log(serverConfig.nodeDevAddress);
 });
+

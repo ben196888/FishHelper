@@ -8,7 +8,8 @@
     "watch": "rm -rf ./build/* && bnr build:dev",
     "dev": "bnr dev:hot",
     "api": "nodemon server.js",
-    "build-lang": "bnr build:lang"
+    "build-lang": "bnr build:lang",
+    "start": "node server.js"
   },
   "betterScripts": {
     "dev:hot": {
@@ -61,7 +62,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
-    "ip": "^1.1.5",
+
     "nodemon": "^1.14.11",
     "open": "^0.0.5",
     "postcss-cssnext": "^3.0.2",
@@ -89,5 +90,9 @@
     "redux": "^3.7.2",
     "redux-form": "^7.2.0",
     "redux-saga": "^0.16.0"
-  }
+  },
+  "engines": {
+    "node": "9.x",
+    "npm": "5.x"
+  }  
 }
