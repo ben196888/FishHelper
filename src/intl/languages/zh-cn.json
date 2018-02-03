@@ -22,5 +22,7 @@
   "aquaculture.warm-fresh": "温水 淡水",
   "aquaculture.warm-seawater": "温水 咸水",
   "aboutus.aboutus-title": "关于我们",
-  "oragnization.title": "组织资讯"  
+  "oragnization.title-org": "组织资讯",
+  "oragnization.foriegn-org": "国外",
+  "oragnization.internal-org": "国内"
 }

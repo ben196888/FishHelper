@@ -1,11 +1,16 @@
 .container {
   width: 100%;
+  min-height: calc(100vh - 158px);
   text-align: center;
   background: #f0f3f5;
 
+  h1 {
+    margin: 0;
+    padding-top: 30px;
+  }
+
   .country {
     margin: 20px 30px 0 0;
-    float: left;
     height: 40px;
     width: 120px;
   }
@@ -16,12 +21,13 @@
     border: 1px solid #eee;
     border-radius: 3px;
     width: 40%;
+    margin-top: 15px;
     box-sizing: border-box;
-    margin-right: 20px;
+    display: inline-block;
 
     img {
-      width: 80%;
-      height: 80%;
+      width: 200px;
+      height: 150px;
     }
 
     &:last-of-type {

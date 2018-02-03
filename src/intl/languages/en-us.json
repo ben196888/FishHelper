@@ -23,5 +23,7 @@
   "aquaculture.warm-seawater": "Warn Seawater",
   "aboutus.aboutus-title": "About Us",
   "aboutus.github": "Github",
-  "oragnization.title": "Organization details"
+  "oragnization.title-org": "Organization details",
+  "oragnization.foriegn-org": "Foriegn",
+  "oragnization.internal-org": "Internal"
 }

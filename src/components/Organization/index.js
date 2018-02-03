@@ -10,6 +10,7 @@ import nmfs from 'assets/nmfs.png';
 import shuichan from 'assets/shuichan.png';
 import ntou from 'assets/ntou.png';
 import styles from './organization.scss';
+import { injectIntl } from 'react-intl';
 
 const info = {
   'foreign':[
@@ -21,7 +22,7 @@ const info = {
     { title: 'tfrin', icon: trfin, url: 'https://www.tfrin.gov.tw/mp.asp?mp=1' },
     { title: 'ntou', icon: ntou, url: 'https://www.ntou.edu.tw/bin/home.php' }],
 };
-export default class Organization extends PureComponent {
+export class Organization extends PureComponent {
   constructor (props) {
     super(props);
     this.state = {
@@ -34,29 +35,31 @@ export default class Organization extends PureComponent {
   }
   
   render () {
+    const { intl: { formatMessage } } = this.props;
     
     return (
-      <div>
-        <div className={styles.container}>
-          <h1><FormattedMessage {...locale.oragTitle} /></h1>
-          <select className={styles.country} onChange={this.handleChange} value={this.state.value}>
-            <option value="internal">國內</option>
-            <option value="foreign">國外</option>
-          </select>        
-          <div className={styles['article-block']}>
-            {
-              info[this.state.value].map(({title, icon, url}, index) => (
-                <Block
-                  key={index}
-                  title={title}
-                  icon={icon}
-                  url={url}
-                />
-              ))
-            }
-          </div>
+      <div className={styles.container}>
+        <h1><FormattedMessage {...locale.oragTitle} /></h1>
+        <select className={styles.country} onChange={this.handleChange} value={this.state.value}>
+          <option /> 
+          <option value="internal" >{formatMessage(locale.internalOrg)}</option>
+          <option value="foreign">{formatMessage(locale.foriegnOrg)}</option>
+        </select>        
+        <div className={styles['article-block']}>
+          {
+            info[this.state.value].map(({title, icon, url}, index) => (
+              <Block
+                key={index}
+                title={title}
+                icon={icon}
+                url={url}
+              />
+            ))
+          }
         </div>
       </div>
     );
   }
 }
+
+export default injectIntl(Organization);
