@@ -1,3 +1,4 @@
+var request = require('request');
 
 module.exports = (apiRoutes) => {
     
@@ -5,8 +6,40 @@ module.exports = (apiRoutes) => {
 
     apiRoutes.route('/abc-test')
     .get(function(req, res) {
-        console.log("in router abc-test")
-        res.json({ message: 'abc_test page!' });
+        request("http://203.73.3.172/younginfinity/ajax.aspx?QQQ=fish&User=fishUser&Type=fish_test", function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+            //   var info = JSON.parse(body)
+              // do more stuff
+              res.send(body);
+            }
+        })        
+        // res.json({ message: 'abc_test page!' });
+    });
+
+    apiRoutes.route('/fishKind')
+    .get(function(req, res) {
+        let data = [{
+            "ID":1,
+            "Name_TW":"鱒魚",
+            "Name_CN":"鳟鱼",
+            "Name_EN":"Trout"
+        },{
+            "ID":2,
+            "Name_TW":"比目魚",
+            "Name_CN":"比目鱼",
+            "Name_EN":"Flatfish"
+        },{
+            "ID":3,
+            "Name_TW":"石斑魚",
+            "Name_CN":"石斑鱼",
+            "Name_EN":"Grouper"
+        },{
+            "ID":5,
+            "Name_TW":"鱸魚",
+            "Name_CN":"鲈鱼",
+            "Name_EN":"Sea Bass"
+        }];
+        res.json({ message: data });
     });
 
     apiRoutes.route('/abc-test')
