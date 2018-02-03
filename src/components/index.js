@@ -9,6 +9,7 @@ import Consumers from './Consumers';
 import Input from './Input';
 import Organization from './Organization';
 import Aquaculture from './Aquaculture';
+import AboutUs from './AboutUs';
 
 export {
   Main,
@@ -22,4 +23,5 @@ export {
   Input,
   Organization,
   Aquaculture,
+  AboutUs,
 };
