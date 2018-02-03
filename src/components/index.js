@@ -5,6 +5,7 @@ import Home from './Home';
 import Dialog from './Dialog';
 import Button from './Button';
 import Loading from './Loading';
+import Consumers from './Consumers';
 
 export {
   Main,
@@ -14,4 +15,5 @@ export {
   Dialog,
   Button,
   Loading,
+  Consumers,
 };

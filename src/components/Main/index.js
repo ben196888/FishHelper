@@ -4,13 +4,18 @@ import { Header, Footer } from 'components';
 import styles from './main.scss';
 
 export default class Main extends PureComponent {
-
   render () {
+    const { location, intl, children, changeLocale } = this.props;
+
     return (
       <div className={styles.container}>
-        <Header pathname={this.props.location.pathname} />
+        <Header
+          pathname={location.pathname}
+          changeLocale={changeLocale}
+          intl={intl}
+        />
         <div className={styles.content}>
-          {this.props.children}
+          {children}
         </div>
         <Footer />
       </div>

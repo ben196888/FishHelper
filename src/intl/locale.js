@@ -1,8 +1,5 @@
-const myLang = {
-  id: 'home.my-lang',
-  defaultMessage: 'My Language',
-};
+import home from '../components/Header/locale';
 
 export default {
-  myLang,
+  ...home,
 };

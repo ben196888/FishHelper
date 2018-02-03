@@ -1,7 +1,9 @@
 const ROOT = '/';
-const ABOUT = '/about';
+const AQUACULTURE = '/aquaculture';
+const CONSUMERS = '/consumers';
 
 export default {
   ROOT,
-  ABOUT,
+  AQUACULTURE,
+  CONSUMERS,
 };
