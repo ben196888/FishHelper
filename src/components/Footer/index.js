@@ -6,7 +6,7 @@ export default class Footer extends PureComponent {
   render () {
     return (
       <footer className={styles.footer}>
-        Elaine Huang • starbrave1313677@gmail.com
+        EliTeOcean
       </footer>
     );
   }
