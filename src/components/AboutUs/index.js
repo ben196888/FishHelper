@@ -20,7 +20,12 @@ export default class AboutUs extends PureComponent {
         <section className={styles['aboutus-block']}>
           {
             aboutList.map(({ icon, title, url }, index) => (
-              <About key={index} icon={icon} title={title} url={url} />
+              <About
+                key={index}
+                icon={icon}
+                title={title}
+                url={url}
+              />
             ))
           }
           <div className={styles['aboutus-content']}>
