@@ -29,7 +29,7 @@ module.exports = (apiRoutes) => {
             "Name_TW":"比目魚",
             "Name_CN":"比目鱼",
             "Name_EN":"Flatfish",
-            "Class": "WD"
+            "Class": "WD WS"
         },{
             "ID":3,
             "Name_TW":"石斑魚",
@@ -41,22 +41,22 @@ module.exports = (apiRoutes) => {
             "Name_TW":"鱸魚",
             "Name_CN":"鲈鱼",
             "Name_EN":"Sea Bass",
-            "Class": "WS"
+            "Class": "WD WS"
         }];
         res.json({ message: data });
     });
 
-    apiRoutes.route('/fishInfo/:id')
+    apiRoutes.route('/fishInfo')
     .post(function(req, res) {
-
-
-        test.save(function(err) {
-            if (err)
-                res.send(err);
-
-            res.json({ message: 'abc_test created!' });
-        });
-
+        console.log(req.body)
+        // request.post({
+        //     headers: {'content-type' : 'application/x-www-form-urlencoded'},
+        //     url:     '',
+        //     body:    req.body
+        //   }, function(error, response, body){
+        //     console.log(body);
+        //   });
+        res.json({ message: 'QQ魚'})
     });
 
     apiRoutes.route('/abc-test')
