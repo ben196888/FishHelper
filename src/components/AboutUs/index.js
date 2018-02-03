@@ -11,6 +11,7 @@ export default class AboutUs extends PureComponent {
     const aboutList = [{
       icon: github,
       title: 'github',
+      url: 'https://github.com/EliTechTeam/FishHelper',
     }];
 
     return (
@@ -18,10 +19,14 @@ export default class AboutUs extends PureComponent {
         <h1><FormattedMessage {...locale.aboutusTitle} /></h1>
         <section className={styles['aboutus-block']}>
           {
-            aboutList.map(({ icon, title }, index) => (
-              <About key={index} icon={icon} title={title} />
+            aboutList.map(({ icon, title, url }, index) => (
+              <About key={index} icon={icon} title={title} url={url} />
             ))
           }
+          <div className={styles['aboutus-content']}>
+            <h3><FormattedMessage {...locale.aboutUsContentTitle} /></h3>
+            <section><FormattedMessage {...locale.aboutUsContent} /></section>
+          </div>
         </section>
       </div>
     );

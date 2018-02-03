@@ -23,5 +23,9 @@
   "aquaculture.warm-seawater": "Warn Seawater",
   "aboutus.aboutus-title": "About Us",
   "aboutus.github": "Github",
-  "oragnization.title": "Organization details"
+  "aboutus.about-us-content": "We are Elite, a delicate team concerns about the sustainability of aquaculture production. In order to maintain the precious ocean resources, we gathered innovative information here for both aquaculturist and consumers to find out better choices in exploiting brighter future.",
+  "aboutus.about-us-content-title": "Who we are?",
+  "oragnization.title-org": "Organization details",
+  "oragnization.foriegn-org": "Foriegn",
+  "oragnization.internal-org": "Internal"
 }
