@@ -11,7 +11,7 @@
   outline: none;
 
   &:hover {
-    opacity: .8;
-    transition: opacity .5s;
+    background: #00b3b3;
+    transition: background .5s;
   }
 }

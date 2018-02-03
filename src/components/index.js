@@ -8,6 +8,7 @@ import Loading from './Loading';
 import Consumers from './Consumers';
 import Input from './Input';
 import Organization from './Organization';
+import Aquaculture from './Aquaculture';
 
 export {
   Main,
@@ -20,4 +21,5 @@ export {
   Consumers,
   Input,
   Organization,
+  Aquaculture,
 };

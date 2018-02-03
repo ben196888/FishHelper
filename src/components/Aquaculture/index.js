@@ -10,6 +10,12 @@ import fishIcon2 from 'assets/fish2.png';
 import fishIcon3 from 'assets/fish3.png';
 
 export default class Aquaculture extends PureComponent {
+  static defaultProps = {
+    className: 'container',
+    title: 'aquacuturistTitle',
+    description: 'aquacuturistDesc',
+  }
+
   render () {
     const fishList = [{
       icon: fishIcon0,
@@ -26,8 +32,9 @@ export default class Aquaculture extends PureComponent {
     }];
 
     return (
-      <div className={styles.container}>
-        <h1><FormattedMessage {...locale.aquacuturistTitle} /></h1>
+      <div className={styles[this.props.className]}>
+        <h1><FormattedMessage {...locale[this.props.title]} /></h1>
+        <p className={styles.description}><FormattedMessage {...locale[this.props.description]} /></p>
         <section className={styles['fish-block']}>
           {
             fishList.map(({ icon, title }, index) => (
