@@ -1,15 +1,15 @@
 const home = {
-  id: 'home.home',
+  id: 'header.home',
   defaultMessage: 'Home',
 };
 
 const aquaculture = {
-  id: 'home.aquaculture',
+  id: 'header.aquaculture',
   defaultMessage: 'Aquaculture',
 };
 
 const consumers = {
-  id: 'home.consumers',
+  id: 'header.consumers',
   defaultMessage: 'Consumers',
 };
 

@@ -17,8 +17,6 @@ export default class Header extends PureComponent {
   }
 
   render () {
-    console.log(this.props.intl.locale);
-
     return (
       <header className={styles.header}>
         <nav className={styles.nav}>

@@ -9,5 +9,23 @@
     </head>
     <body>
       <div style="height: 100%" id="root"></div>
+      <script>
+         WebFontConfig = {
+           google: {
+             families: [
+               'Roboto:300,400,500,600,700',
+               'Poppins:300,400,500,600,700,900',
+               'Open Sans:400,400i,600,600i,700,700i'
+             ]
+           }
+         };
+
+         (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+         })(document);
+      </script>
     </body>
 </html>

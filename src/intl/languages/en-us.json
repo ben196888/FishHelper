@@ -1,5 +1,6 @@
 {
-  "home.home": "Home",
-  "home.aquaculture": "Aquaculture",
-  "home.consumers": "Consumers"
+  "header.home": "Home",
+  "header.aquaculture": "Aquaculture",
+  "header.consumers": "Consumers",
+  "home.title": "Helping people make better seafood choices for a healthy ocean"
 }

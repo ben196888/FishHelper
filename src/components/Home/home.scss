@@ -1,22 +1,76 @@
 .container {
   width: 100%;
   text-align: center;
-}
+  background: #f0f3f5;
 
-.api-block {
-  max-width: 500px;
-  border: 1px solid #08c;
-  background: #b3e6ff;
-  border-radius: 3px;
-  padding: 20px;
-  margin: 20px auto;
-  text-align: left;
-
-  p {
-    margin: 0;
+  .background {
+    background: url(assets/talia-cohen.jpg) center no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    top: 81px;
+    z-index: 0;
   }
 
-  h4 {
-    margin-top: 0;
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    color: white;
+    padding: 100px 0;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.5;
+  }
+
+  .search-block {
+    font-family: Poppins;
+    background: white;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    padding: 30px;
+    text-align: left;
+    line-height: 1.2;
+
+    h4 {
+      margin: 20px 0 0;
+      font-size: 20px;
+      color: #369;
+    }
+
+    p {
+      font-family: Roboto;
+      margin-bottom: 0;
+    }
+  }
+
+  .article-container {
+    background: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 30%;
+    box-sizing: border-box;
+    margin-right: 20px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .article-block {
+    display: flex;
+    justify-content: center;
   }
 }
