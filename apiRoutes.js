@@ -22,30 +22,46 @@ module.exports = (apiRoutes) => {
             "ID":1,
             "Name_TW":"鱒魚",
             "Name_CN":"鳟鱼",
-            "Name_EN":"Trout"
+            "Name_EN":"Trout",
+            "Class": "CD"
         },{
             "ID":2,
             "Name_TW":"比目魚",
             "Name_CN":"比目鱼",
-            "Name_EN":"Flatfish"
+            "Name_EN":"Flatfish",
+            "Class": "WD"
         },{
             "ID":3,
             "Name_TW":"石斑魚",
             "Name_CN":"石斑鱼",
-            "Name_EN":"Grouper"
+            "Name_EN":"Grouper",
+            "Class": "CS"
         },{
             "ID":5,
             "Name_TW":"鱸魚",
             "Name_CN":"鲈鱼",
-            "Name_EN":"Sea Bass"
+            "Name_EN":"Sea Bass",
+            "Class": "WS"
         }];
         res.json({ message: data });
+    });
+
+    apiRoutes.route('/fishInfo/:id')
+    .post(function(req, res) {
+
+
+        test.save(function(err) {
+            if (err)
+                res.send(err);
+
+            res.json({ message: 'abc_test created!' });
+        });
+
     });
 
     apiRoutes.route('/abc-test')
     .post(function(req, res) {
         console.log("in router abc-test post")
-        var test = new abc_test();      // create a new instance of the abc_test model
         // abc_test.name = req.body.name;  // set the abc_test name (comes from the request)
         test.name = "123"
         console.log(test)
