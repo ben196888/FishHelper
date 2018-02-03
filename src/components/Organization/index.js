@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
+import { FormattedMessage } from 'react-intl';
 import Block from './Block';
+import locale from './locale';
 import trfin from 'assets/tfrin.png';
 import twoxsea from 'assets/twoxsea.png';
 import europ_fisheris from 'assets/europ-fisheris.png';
@@ -36,6 +38,7 @@ export default class Organization extends PureComponent {
     return (
       <div>
         <div className={styles.container}>
+          <h1><FormattedMessage {...locale.oragTitle} /></h1>
           <select className={styles.country} onChange={this.handleChange} value={this.state.value}>
             <option value="internal">國內</option>
             <option value="foreign">國外</option>
