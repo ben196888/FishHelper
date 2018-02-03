@@ -4,6 +4,7 @@ import styles from './fish-detail.scss';
 import { Button } from 'components';
 import { Link } from 'react-router';
 import PATHS from 'constants/paths';
+import starIcon from 'assets/star.svg';
 
 const localeMap = {
   'en-us': 'us_context',
@@ -25,6 +26,21 @@ export default class FishDetail extends PureComponent {
   componentDidMount () {
     const { getFishInfo, params: { id } } = this.props;
     this.props.getFishInfo(id);
+  }
+
+  starGenerator = (account) => {
+    const rows = [];
+    for (let i = 0; i < account.score; i += 1) {
+      rows.push((
+        <img
+          src={starIcon}
+          key={i}
+          alt="star"
+          className={styles.star}
+        />
+      ));
+    }
+    return <span>{rows}</span>;
   }
 
   render () {
@@ -109,11 +125,12 @@ export default class FishDetail extends PureComponent {
               {
                 forConsumer.map((account, index) => (
                   <div key={index} className={styles.block}>
-                    <div>
+                    <div className={styles['person-block']}>
                       <div className={styles['person-icon']} />
                       <p>Account: {account.account_name}</p>
                       <p>Start Time: {account.processing.start_time}</p>
                       <p>Density: {account.processing.density}</p>
+                      <p>Score: <br />{this.starGenerator(account)}</p>
                     </div>
                     <div>
                       <h3>Feed Info</h3>

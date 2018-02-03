@@ -28,7 +28,7 @@
   }
 
   table {
-    margin: 15px 0;
+    margin: 30px 0;
 
     thead {
       background: #369;
@@ -55,12 +55,6 @@
       padding: 20px;
       display: flex;
       margin: 20px 0 50px;
-
-      img {
-        width: 100px;
-        margin-left: 10px;
-        display: block;
-      }
     }
 
     .feed-info {
@@ -88,5 +82,15 @@
     height: 100px;
     background: url(assets/woman.png);
     background-size: 100px;
+    margin: 0 auto;
   }
+}
+
+.person-block {
+  width: 210px;
+  border-right: 1px solid #eee;
+}
+
+.star {
+  width: 30px;
 }
