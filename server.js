@@ -1,4 +1,4 @@
-// const serverConfig = require('./configs/server-config');
+const serverConfig = require('./configs/server-config');
 const express = require('express');
 const path = require('path');
 
@@ -32,8 +32,8 @@ require('./apiRoutes')(apiRoutes);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('node development mode now is listening on: 3000');
-  // console.log(`http://localhost:${serverConfig.nodeServerPort}`);
-  // console.log(`http://127.0.0.1:${serverConfig.nodeServerPort}`);
-  // console.log(serverConfig.nodeDevAddress);
+  console.log(`http://localhost:${serverConfig.nodeServerPort}`);
+  console.log(`http://127.0.0.1:${serverConfig.nodeServerPort}`);
+  console.log(serverConfig.nodeDevAddress);
 });
 
