@@ -5,7 +5,9 @@ import { Input } from 'components';
 import { FormattedMessage } from 'react-intl';
 import locale from './locale';
 import Article from './Article';
-import icon from 'assets/ocean-issue.png';
+import article0 from 'assets/article0.png';
+import article1 from 'assets/article1.png';
+import article2 from 'assets/article2.png';
 
 export default class Home extends PureComponent {
   constructor (props) {
@@ -28,9 +30,9 @@ export default class Home extends PureComponent {
     const { value } = this.state;
 
     const info = [
-      { title: 'oceanIssue', text: 'oceanDesc', icon },
-      { title: 'IamAquacuturist', text: 'aquacultureDesc', icon },
-      { title: 'IamConsumer', text: 'IamConsumerDesc', icon },
+      { title: 'oceanIssue', text: 'oceanDesc', icon: article0 },
+      { title: 'IamAquacuturist', text: 'aquacultureDesc', icon: article1 },
+      { title: 'IamConsumer', text: 'IamConsumerDesc', icon: article2 },
     ];
 
     return (

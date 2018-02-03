@@ -12,6 +12,12 @@
   "home.i-am-aquacuturist": "我是水產養殖業者",
   "home.i-am-consumer": "我是消費者",
   "home.aquaculture-desc": "使用植物性蛋白取代部分的動物性蛋白的飼料來源，並增加健康不生病的魚產量，且能降低對環境的衝擊及影響，建立養殖魚業者的自有品牌，提升魚的經濟價值。",
-  "home.i-am-consumer-desc": "一起了解海洋环境的相关议题，为海洋的永续，购买健康的鱼可以吃得安心又放心。餐厅与海鲜业者，了解养殖环境与养殖过程，选择信任的养殖场契作。"
-
+  "home.i-am-consumer-desc": "一起了解海洋环境的相关议题，为海洋的永续，购买健康的鱼可以吃得安心又放心。餐厅与海鲜业者，了解养殖环境与养殖过程，选择信任的养殖场契作。",
+  "aquaculture.aquacuturist-title": "養魚餵魚知多少",
+  "aquaculture.consumer-title": "Consumer",
+  "aquaculture.aquacuturist-desc": "選用的飼料，其實可以更有更好的選擇。飼料影響魚的健康與生長，好的飼料來源，可以降低魚的生病率，提高健康魚的產出，亦可以降低對環境的衝擊，除了價格，魚飼料的製成成分更是養魚人的關切目標。",
+  "aquaculture.cold-fresh": "冷水 淡水",
+  "aquaculture.cold-seawater": "冷水 鹹水",
+  "aquaculture.warm-fresh": "溫水 淡水",
+  "aquaculture.warm-seawater": "溫水 鹹水"
 }

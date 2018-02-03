@@ -10,7 +10,9 @@ export default class Article extends PureComponent {
 
     return (
       <article className={styles['article-container']}>
-        <img src={icon} alt="not found" />
+        <div className={styles['icon-container']}>
+          <img src={icon} alt="not found" />
+        </div>
         <h5><FormattedMessage {...locale[title]} /></h5>
         <p><FormattedMessage {...locale[text]} /></p>
       </article>

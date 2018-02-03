@@ -60,12 +60,21 @@
     margin-right: 20px;
     position: relative;
 
-    img {
+    .icon-container {
       width: 80px;
       height: 80px;
+      border-radius: 50%;
+      background: #369;
       position: absolute;
       top: -30px;
       left: calc(50% - 30px);
+      text-align: center;
+      padding-top: 16px;
+      box-sizing: border-box;
+    }
+
+    img {
+      height: 50px;
     }
 
     &:last-of-type {
