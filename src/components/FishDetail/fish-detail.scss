@@ -1,6 +1,7 @@
 .container {
   max-width: 1190px;
   margin: 0 auto;
+  padding-bottom: 50px;
 
   h2 {
     font-size: 28px;
@@ -19,5 +20,62 @@
     border: 1px solid #eee;
     padding: 20px;
     box-sizing: border-box;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    margin: 15px 0;
+
+    thead {
+      background: #369;
+      color: white;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .consumer-container {
+    .block {
+      border: 1px solid #eee;
+      padding: 20px;
+      display: flex;
+      margin: 20px 0 50px;
+
+      img {
+        width: 100px;
+        margin-left: 10px;
+        display: block;
+      }
+    }
+
+    .feed-info {
+      padding: 30px;
+    }
+
+    h3 {
+      padding-left: 40px;
+    }
+
+    table {
+      margin-left: 30px;
+    }
+
+    td,
+    th {
+      text-align: left;
+      padding: 20px;
+      width: 150px;
+    }
   }
 }

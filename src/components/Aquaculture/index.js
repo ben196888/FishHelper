@@ -23,7 +23,7 @@ export default class Aquaculture extends PureComponent {
   }
 
   render () {
-    const { fishkind, intl: { locale } } = this.props;
+    const { fishkind, intl: { locale }, isConsumer } = this.props;
     const fishList = [{
       icon: fishIcon0,
       title: 'coldFresh',
@@ -51,6 +51,7 @@ export default class Aquaculture extends PureComponent {
                 title={title}
                 fishkind={fishkind}
                 locale={locale}
+                isConsumer={isConsumer}
               />
             ))
           }

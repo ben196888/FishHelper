@@ -8,6 +8,7 @@ const mapStateToProps = (state) => {
     fishInfo: state.fishInfo,
     fishkind: state.fishkind,
     intl: state.intl,
+    pathname: state.routing.locationBeforeTransitions.pathname,
   };
 };
 

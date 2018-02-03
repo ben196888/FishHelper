@@ -34,13 +34,13 @@ export default class Header extends PureComponent {
             <FormattedMessage {...locale.home} />
           </Link>
           <Link
-            className={styles[this.props.pathname === PATHS.AQUACULTURE ? 'link-active' : 'link']}
+            className={styles[this.props.pathname.indexOf(PATHS.AQUACULTURE) > -1 ? 'link-active' : 'link']}
             to={PATHS.AQUACULTURE}
           >
             <FormattedMessage {...locale.aquaculture} />
           </Link>
           <Link
-            className={styles[this.props.pathname === PATHS.CONSUMERS ? 'link-active' : 'link']}
+            className={styles[this.props.pathname.indexOf(PATHS.CONSUMERS) > -1 ? 'link-active' : 'link']}
             to={PATHS.CONSUMERS}
           >
             <FormattedMessage {...locale.consumers} />
