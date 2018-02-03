@@ -14,9 +14,15 @@ export default class Aquaculture extends PureComponent {
     className: 'container',
     title: 'aquacuturistTitle',
     description: 'aquacuturistDesc',
+    fishkind: [],
+  }
+
+  componentDidMount () {
+    // this.props.getFishKind();
   }
 
   render () {
+    const { fishkind } = this.props;
     const fishList = [{
       icon: fishIcon0,
       title: 'coldFresh',
@@ -38,7 +44,12 @@ export default class Aquaculture extends PureComponent {
         <section className={styles['fish-block']}>
           {
             fishList.map(({ icon, title }, index) => (
-              <Fish key={index} icon={icon} title={title} />
+              <Fish
+                key={index}
+                icon={icon}
+                title={title}
+                fishkind={fishkind}
+              />
             ))
           }
         </section>

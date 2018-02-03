@@ -14,10 +14,9 @@
 }
 
 .fish-block {
-  height: 500px;
   background: url(assets/beach.jpg) center;
-  background-size: 100%;
-  padding: 100px 0 0;
+  background-size: cover;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -38,6 +37,63 @@
   margin: 0 auto 30px;
   max-width: 800px;
   line-height: 1.5;
+}
+
+.tag {
+  color: white;
+  background: #fa0;
+  padding: 10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 12px;
+  max-width: 150px;
+}
+
+.fish-tag {
+  color: white;
+  background: #fa0;
+  padding: 5px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.fish-container {
+  position: relative;
+}
+
+.fish-list {
+  min-width: 200px;
+  position: relative;
+  display: block;
+  padding: 15px 0 0;
+  background: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 30px 10px;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 30px;
+    background: #fa0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  img {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .consumer-container .fish-block {

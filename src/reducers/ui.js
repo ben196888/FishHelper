@@ -2,6 +2,7 @@ import createActionCreator from 'utils/redux';
 
 const TOGGLE_DIALOG = 'TOGGLE_DIALOG';
 const TOGGLE_LOADING = 'TOGGLE_LOADING';
+const SELECT_TYPE = 'SELECT_TYPE';
 
 export const initialState = {
   dialog: {
@@ -9,6 +10,7 @@ export const initialState = {
     component: null,
   },
   isLoading: false,
+  selectedType: null,
 };
 
 export default (state = initialState, action) => {
@@ -24,9 +26,14 @@ export default (state = initialState, action) => {
       ...state,
       isLoading: action.payload || false,
     };
+    case SELECT_TYPE: return {
+      ...state,
+      selectedType: action.payload,
+    };
     default: return state;
   }
 };
 
 export const toggleDialog = createActionCreator(TOGGLE_DIALOG);
 export const toggleLoading = createActionCreator(TOGGLE_LOADING);
+export const selectType = createActionCreator(SELECT_TYPE);
