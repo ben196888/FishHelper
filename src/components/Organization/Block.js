@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import styles from './organization.scss';
-
+import { FormattedMessage } from 'react-intl';
+import locale from './locale';
 export default class Block extends PureComponent {
 
   render () {
-    return (
-      <div>
-        <div className={styles.container}>
+    const { title, icon } = this.props;
 
-          <h1>123123</h1>
-        </div>
-      </div>
+    return (
+      <article className={styles['article-container']}>
+        <span className={styles['icon-circle']}>
+          <img src={icon} alt="not found" />
+        </span>
+        <h5><FormattedMessage {...locale[title]} /></h5>
+      </article>
     );
   }
 }
