@@ -7,6 +7,7 @@ import Button from './Button';
 import Loading from './Loading';
 import Consumers from './Consumers';
 import Input from './Input';
+import Organization from './Organization';
 
 export {
   Main,
@@ -18,4 +19,5 @@ export {
   Loading,
   Consumers,
   Input,
+  Organization,
 };

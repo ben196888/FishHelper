@@ -2,5 +2,10 @@
   "header.home": "Home",
   "header.aquaculture": "Aquaculture",
   "header.consumers": "Consumers",
-  "home.title": "Helping people make better seafood choices for a healthy ocean"
+  "home.organization": "Organization",
+  "home.title": "Helping people make better seafood choices for a healthy ocean",
+  "home.search-seafood": "Search Seafood Recommendations",
+  "home.search-desc": "Our recommendations help you choose seafood that's fished or farmed in ways that have less impact on the environment.",
+  "home.ocean-issue": "Ocean Issues",
+  "home.ocean-desc": "Learn about the impacts of wild-caught seafood, Discover how aquaculture can meet growing global demand"
 }
