@@ -35,7 +35,7 @@ const aquacultureDesc = {
 
 const IamConsumer = {
   id: 'home.i-am-consumer',
-  defaultMessage: 'I\'m an Consumer',
+  defaultMessage: 'I\'m a Consumer',
 };
 
 const IamConsumerDesc = {
