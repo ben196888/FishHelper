@@ -46,7 +46,7 @@ export default class Fish extends PureComponent {
               key={index}
               to={isConsumer ? `${PATHS.CONSUMERS}/${f.ID}` : `${PATHS.AQUACULTURE}/${f.ID}`}
             >
-              <img src={f.url} alt="images" />
+              <img src={f.picURL} alt="images" />
               <span className={styles['fish-tag']}>{f[localeMap[locale]]}</span>
             </Link>
           ))

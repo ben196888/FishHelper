@@ -46,7 +46,7 @@ export default class FishDetail extends PureComponent {
   render () {
     const { fishInfo, intl: { locale }, fishkind, params: { id }, pathname } = this.props;
 
-    const { url } = fishkind.find((f) => {
+    const { picURL } = fishkind.find((f) => {
       return f.ID.toString() === id.toString();
     });
     const fishList = fishInfo[localeMap[locale]];
@@ -56,7 +56,7 @@ export default class FishDetail extends PureComponent {
 
     return (
       <div className={styles.container}>
-        <img className={styles.img} src={url} alt="images" />
+        <img className={styles.img} src={picURL} alt="images" />
         <section className={styles['fish-info']}>
           <h2>Information</h2>
           <p>Name: {oneFishInfo.name}</p>
@@ -103,7 +103,7 @@ export default class FishDetail extends PureComponent {
                           <td>{feed.efficiency}</td>
                           <td>{feed.impact}</td>
                           <td>{feed.fifo}</td>
-                          <td>{feed.amount}</td>
+                          <td>{feed.amount.indexOf('http') > -1 ? <a href={feed.amount} target="_blank">attachment</a> : feed.amount}</td>
                           <td>{
                             links.map((l, index) => {
                               return <a key={index} href={l}>Feed Tech[{index + 1}]</a>;
@@ -111,8 +111,8 @@ export default class FishDetail extends PureComponent {
                           }</td>
                           <td>{feed.season}</td>
                           <td>{feed.temp}</td>
-                          <td>{feed.quality}</td>
-                          <td>{feed.density}</td>
+                          <td>{feed.quality.indexOf('http') > -1 ? <a href={feed.quality} target="_blank">attachment</a> : feed.quality}</td>
+                          <td>{feed.density.indexOf('http') > -1 ? <a href={feed.density} target="_blank">attachment</a> : feed.density}</td>
                         </tr>
                       );
                     })
@@ -129,17 +129,17 @@ export default class FishDetail extends PureComponent {
                       <div className={styles['person-icon']} />
                       <p>Account: {account.account_name}</p>
                       <p>Start Time: {account.processing.start_time}</p>
-                      <p>Density: {account.processing.density}</p>
+                      <p>Density: {account.processing.density} {account.processing.density && 'kg/m^2'}</p>
                       <p>Score: <br />{this.starGenerator(account)}</p>
                     </div>
                     <div>
-                      <h3>Feed Info</h3>
+                      <h3>Feed Info(飼料資訊)</h3>
                       <table>
                         <thead>
                           <tr>
-                            <th>Name</th>
-                            <th>Source</th>
-                            <th>Price</th>
+                            <th>Name<br />(飼料名稱)</th>
+                            <th>Source<br />(飼料來源)</th>
+                            <th>Price<br />(飼料價格)</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -156,13 +156,13 @@ export default class FishDetail extends PureComponent {
                       </table>
                     </div>
                     <div>
-                      <h3>Feed Method</h3>
+                      <h3>Feed Record(餵食紀錄)</h3>
                       <table>
                         <thead>
                           <tr>
-                            <th>Time</th>
-                            <th>Amount</th>
-                            <th>Price</th>
+                            <th>Time<br />(餵食時間)</th>
+                            <th>Quality<br />(餵食量)</th>
+                            <th>Picture<br />(紀錄圖片)</th>
                           </tr>
                         </thead>
                         <tbody>

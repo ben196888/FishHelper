@@ -19,7 +19,7 @@ export default class Aquaculture extends PureComponent {
   }
 
   componentDidMount () {
-    // this.props.getFishKind();
+    this.props.getFishKind();
   }
 
   render () {

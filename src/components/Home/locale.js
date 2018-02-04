@@ -1,6 +1,6 @@
 const homeTitle = {
   id: 'home.title',
-  defaultMessage: 'Helping people make better seafood choices for a healthy ocean',
+  defaultMessage: 'Helping People Choose Ocean-Friendly Product',
 };
 
 const searchSeafood = {
