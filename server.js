@@ -7,6 +7,14 @@ const root = path.resolve(__dirname, 'build');
 
 const bodyParser = require('body-parser');
 
+const allowCrossDomain = function(req, res, next) {
+  res.header('Access-Control-Allow-Credentials', true);
+  res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT, OPTIONS, HEAD');
+  res.header('Access-Control-Allow-Headers', 'content-type');
+  next();
+}
+
 // const mongoose   = require('mongoose');
 // mongoose.connect("mongodb://elite.fishackathon:elite.fishackathon.qq@ds125555.mlab.com:25555/fishackathon");
 
@@ -18,7 +26,7 @@ app.use(bodyParser.json());
 // ROUTES FOR OUR API
 // =============================================================================
 const apiRoutes = express.Router();              // get an instance of the express Router
-
+app.use(allowCrossDomain);
 app.use(express.static(root));
 
 app.use('/api', apiRoutes);
